@@ -30,6 +30,7 @@ jobs:
       # Build and push Docker image
       - name: Build and push Docker image
         run: |
+          cd app
           docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.REPOSITORY_NAME }}:${{ github.run_number }}
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.REPOSITORY_NAME }}:${{ github.run_number }}
 
