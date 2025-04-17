@@ -48,4 +48,4 @@ jobs:
           location: westeurope
           cpu: 1
           memory: 1.5
-          port: 3000
+          ports: 3000
